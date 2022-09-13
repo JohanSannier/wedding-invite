@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./public/icons8-wedding-58.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>RSVP</title>
+  </head>
+  <body>
+    <div id="app">
+      <main>
+        <h1>RSVP</h1>
+        <section>
+          <form action="https://formspree.io/f/mkneolzp" method="POST">
+            <label>
+              Prénoms des invités :
+              <input
+                type="text"
+                name="Prénoms"
+                placeholder="Jean et Marie"
+                required
+              />
+            </label>
+            <label>
+              Nombre d'invités :
+              <input type="number" name="Invités" min="0" max="9" required />
+            </label>
+            <label>
+              Seront présent pour le mariage :
+              <select name="Présent" required>
+                <option value="oui">Oui</option>
+                <option value="non">Non</option>
+              </select>
+            </label>
+            <button>Envoyer votre réponse</button>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
